@@ -1,0 +1,32 @@
+{
+  "name": "Screenshot",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Injecting stuff",
+  "homepage_url": "http://danharper.me",
+  "background": {
+    "scripts": [
+      "background.js","jquery.js"
+    ],
+    "persistent": true
+  },
+  
+  "browser_action": {
+	"default_popup": "popup.html",
+    "default_title": "Inject!"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "<all_urls>",
+    "activeTab",
+    "downloads",
+    "tabs"
+  ],
+  "content_scripts": [ 
+	{ 
+		"js": [ "jquery.js"],
+		 "matches": [ "http://*/*", "https://*/*"]
+	 }
+ ]
+}
