@@ -2,13 +2,26 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Barrio|Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    #element1 {display: inline-block;}
+    body {width: 355px;}
+    #folder {width: 228px; height: 28px; margin-top: 10px; margin-left: 10px; font-size: 13px; margin-bottom: 10px;}
+    #download {font-size: 13px;  margin-left: 5px; margin-right: 10px; margin-top: -2px; align-items: center; height: 20px; width: 97px; padding-bottom: 20px; padding-top:-100px;}
+    #element2 {display: inline-block;}
+    h4 {margin-left: 10px;}
+    #screenshot {width: 355px;height: 190px;}
+  </style>
 </head>
 
 <body>
-  Screen Captured!!
-  <span>Folder: 
-  <input  id = "folder" type = "text"></input>
-  <button id = 'download'>Save</button></span>
+  <img id="screenshot" src="" alt="Screenshot">
+  <div id="element1">
+    <input id="folder" placeholder="Folder Name (Optional)" class="form-control" type="text"></input>
+  </div>
+  <div id="element2">
+    <button id='download' type="button" class="btn btn-primary" >Save</button>
+  </div>
   <script src="main.js"></script>
 </body>
 
