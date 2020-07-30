@@ -25,17 +25,13 @@
     "default_title": "Screenshot!"
   },
   "permissions": [
-    "https://*/*",
-    "http://*/*",
-    "<all_urls>",
     "activeTab",
-    "downloads",
-    "tabs"
+    "downloads"
   ],
   "content_scripts": [ 
 	{ 
 		"js": [ "jquery.js"],
-		 "matches": [ "http://*/*", "https://*/*"]
+		 "matches": ["http://*/*", "https://*/*"]
 	 }
  ]
 }
